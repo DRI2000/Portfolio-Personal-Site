@@ -63,6 +63,11 @@ p {
   top: 50px;
 }
 
+.profile {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .profile-pic {
   margin-top: 30px;
   border-radius: 50%;
