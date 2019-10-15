@@ -3,64 +3,162 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Diego Corisco</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Uwe Drawings</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Delius|Montserrat:400,600,700|Delius+Swash+Caps|Kalam&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+  <div class="container-fluid cont1">
 
-  <div class="top-container">
-    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-    <h1>I'm Diego,</h1>
-    <h2>a web <ins>dev</ins>eloper.</h2>
-    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-    <img class="mountain" src="images/mountain.png" alt="mountain-img">
-  </div>
+    <!-- Navigation Bar -->
+    <section id="NavigationBar">
+      <nav id="navbar-bar" class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand title" href="#">
+          <img class="brand-logo" src="images/brand.jpg" width="40" height="40" alt="Brand" class="d-inline-block align-top">
+          Uwe Drawings
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#Highlights">Highlights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Bio">Bio</a </li> <li class="nav-item">
+              <a class="nav-link" href="#Collection">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Get In Touch</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
 
-  <div class="middle-container">
-    <div class="profile">
-      <img class="profile-pic" src="images/myPic.jpg" alt="My Picture">
-      <h2>Hello</h2>
-      <p>I am a web developer and English to Spanish Translator. Japanese n3rd in my free time.</p>
-    </div>
-    <hr>
-
-    <div class="skills">
-      <h2>My Skills</h2>
-      <div class="skill-row" id="skill-row1">
-        <img class="web-coding" src="images/web-coding-2.png" alt="Web Development">
-        <h3>Web Development</h3>
-        <p>Coding has been a passion of mine since I got my first computer, and the moment I discovered web development I inmediately fell in love with it. Now I am able to create any desired site from scratch.</p>
+    <!-- Highlights -->
+    <section id="Highlights">
+      <div id="carousel" class="carousel" data-ride="carousel" data-interval="15000" data-pause="hover">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="images/1.jpg" class="d-block w-100" alt="Highlighted Image 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="images/2.jpg" class="d-block w-100" alt="Highlighted Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/3.jpg" class="d-block w-100" alt="Highlighted Image 3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <div class="skill-row">
-        <img class="translation" src="images/translation.png" alt="English to spanish Translation">
-        <h3>English to Spanish Translation</h3>
-        <p>Being a Translation undergraduate, languages are central in my life. To the date, I have participated in four different translation projects, including both professional and non-professional works.</p>
+    </section>
+  </div>
+
+  <!-- Bio -->
+  <div class="container-fluid cont2">
+    <section id="Bio">
+      <h1 class="bio-heading">About myself</h1>
+      <div class="row bio-row">
+        <div class="col-lg-2 bio-image">
+          <img class="bio-image" src="images/brand.jpg" alt="My Picture">
+        </div>
+        <div class="col bio-text">
+          <p class="bio-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non eros pharetra, posuere metus nec, pulvinar lorem.
+            Curabitur eu lectus eget magna mollis aliquam eget sit amet odio. Fusce auctor consectetur leo. Mauris id turpis ligula.
+            Maecenas sed eros mi. Nam semper pellentesque ipsum auctor dictum.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas gravida vel tortor ac mattis.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Collection -->
+  <section id="Collection">
+    <h1 class="collection-heading">Collection</h1>
+    <div class="row collection-row">
+      <div class="col-lg-3 col-sm-12 collection-col">
+        <img class="collection-image" src="images/2.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-sm-12 collection-col">
+        <img class="collection-image" src="images/1.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-sm-12 collection-col">
+        <img class="collection-image" src="images/3.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-sm-12 collection-col">
+        <img class="collection-image" src="images/8.jpg" alt="">
       </div>
     </div>
-    <hr>
+    <div class="row collection-row">
+      <div class="col-lg-3 col-sm-12 collection-col">
+        <img class="collection-image" src="images/7.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-sm-12 collection-col">
+        <img class="collection-image" src="images/11.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-sm-12 collection-col">
+        <img class="collection-image" src="images/12.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-sm-12 collection-col">
+        <img class="collection-image" src="images/10.jpg" alt="">
+      </div>
+    </div>
 
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>If you want to commission me.</h3>
-      <p class="contact-message">Or we can simply chit-chat about your favourite topic.</p>
-      <a href="mailto:diegocorisco@gmail.com" class="myButton">CONTACT ME</a>
+    <button class="see-more btn btn-dark" style="background-color: #ff6361" data-toggle="collapse" data-target="#collection-2">See More</button>
+    <div id="collection-2" class="collapse">
+      <div class="row collection-row">
+        <div class="col-lg-3 col-sm-6 collection-col">
+          <img class="collection-image" src="images/9.jpg" alt="">
+        </div>
+        <div class="col-lg-3 col-sm-6 collection-col">
+          <img class="collection-image" src="images/6.jpg" alt="">
+        </div>
+        <div class="col-lg-3 col-sm-6 collection-col">
+          <img class="collection-image" src="images/4.jpg" alt="">
+        </div>
+        <div class="col-lg-3 col-sm-6 collection-col">
+          <img class="collection-image" src="images/5.jpg" alt="">
+        </div>
+      </div>
+      <div class="row collection-row">
+        <div class="col-lg-3 col-sm-6 collection-col">
+          <img class="collection-image" src="images/brand.jpg" alt="">
+        </div>
+        <div class="col-lg-3 col-sm-6 collection-col">
+          <img class="collection-image" src="images/brand.jpg" alt="">
+        </div>
+        <div class="col-lg-3 col-sm-6 collection-col">
+          <img class="collection-image" src="images/brand.jpg" alt="">
+        </div>
+        <div class="col-lg-3 col-sm-6 collection-col">
+          <img class="collection-image" src="images/brand.jpg" alt="">
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="bottom-container">
-    <div class="links">
-      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-      <a class="footer-link" href="https://twitter.com/DRI2000">Twitter</a>
-      <a class="footer-link" href="https://www.instagram.com/d.microstories/">Instagram</a>
-    </div>
-    <div class="copyright">
-      <p>© 2019 Diego Corisco.</p>
-      <div class="attribution">Icons made by <a class="copyright2" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a class="copyright2" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-    </div>
-  </div>
+  </section>
 
 </body>
 
